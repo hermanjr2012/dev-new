@@ -21,8 +21,9 @@ function doSetup() {
     if ( (navigator.connection.type.toLowerCase == 'none') && (navigator.connection.type.toLowerCase == '') ) { $('#lostConnection').show(); }
     
     //prevent scrolling - document.ontouchmove = function(e) {e.preventDefault()};
-    function stopScrolling( touchEvent ) { touchEvent.preventDefault(); }
-    document.addEventListener( 'touchmove' , stopScrolling , false );
+   //function stopScrolling( touchEvent ) { touchEvent.preventDefault(); }
+   //document.addEventListener( 'touchmove' , stopScrolling , false );
+    $('body').bind('touchmove', function(e){e.preventDefault()});
 
     //do login stuff
     doLogin();
@@ -36,6 +37,17 @@ function doSetup() {
     keepOnTop();    
     
     getUserOBJ();
+    $('#CamerRollLoc').on('click', function(e){
+        $('body').unbind('touchmove');
+    });
+    
+    $('#getPhotoFromLibraryButton').on('click', function(e){
+        $('body').unbind('touchmove');
+    });
+    $('#backtopictureadd').on('click', function(e){
+        $('body').bind('touchmove', function(e){e.preventDefault()});
+    });
+
 }
 
 function shouldRotateToOrientation(orientation) {  

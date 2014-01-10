@@ -19,8 +19,6 @@ var galleryFileList = {
 
 
 
-
-
 $(document).on('tap','.thumbnails-wrapper',function(e){
 
     var t = $(event.e);
@@ -54,8 +52,17 @@ $(document).on('click','#uploadselected',function(e){
                 toastr.info('Uploading...');            
                 //function uploadFile(postURI,fileURI,fileName,title,media,lat,lng,content)
                 for (index = 0; index < tmp.length; ++index) {
-                    uploadFile('http://www.lifestimecapsule.com/ajax/upload',tmp[index],tmp[index],photoTitle,'photo',-1,-1,'');
-                }            
+                    uploadFile('http://www.lifestimecapsule.com/ajax/upload',tmp[index],tmp[index],photoTitle,'photo',-1,-1,'');                  
+                   
+                }
+                
+                 if(tmp.length = index){
+                         //Reset tile input
+                        $('#photosmulti').val('');
+                        $('#gallery-list input[type="checkbox"]').removeAttr('checked');
+                        $('.backtohome').trigger('click');
+                    }
+                $('body').bind('touchmove', function(e){e.preventDefault()});
             } else{
                 toastr.error('Please provide a title for this photo.','Photo Upload Error');
             }

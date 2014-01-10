@@ -49,7 +49,6 @@
 	width:100%;
 	/*background:#aaa;*/
     background:#ffffff;
-	overflow:auto;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
 }
