@@ -21,7 +21,9 @@ photoApp.prototype={
 	    that._destinationType = navigator.camera.DestinationType;        
         
         $('#capturePhotoButton').on('tap',function() { that._capturePic.apply(that,arguments);  });
+        /*
         $('#getPhotoFromLibraryButton').on('tap',function() { that._getPhotoFromLibrary.apply(that,arguments); });
+        */
         
         $('#photoSaveUpload').click(function() {
             if (that._captureCount > 0) {
