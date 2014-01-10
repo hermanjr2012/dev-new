@@ -541,7 +541,6 @@ input[type=submit]:hover{cursor:pointer;}
 */
 	background: url(../images/bg/Add-Voice-640x517.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
-    position: relative;     
 }
 
 #audio-add.ios-model-iphone5-1{ background: url(../images/iOS/7/Add-Voice-640x617.jpg) no-repeat 0 144px #efefef; background-size:100% auto; }
@@ -562,13 +561,11 @@ input[type=submit]:hover{cursor:pointer;}
 #picture-add {
     background: url(../images/bg/Add-Photo-640x617.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
-    position: relative;     
 }
 
 #video-add {
     background: url(../images/bg/Add-Video-640x617.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
-    position: relative;
 }
 
 #picture-add.ios-model-iphone5-1{
