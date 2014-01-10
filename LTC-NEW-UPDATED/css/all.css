@@ -135,7 +135,7 @@ input[type=submit]:hover{cursor:pointer;}
 .header-form #journal,
 .header-form #video,
 .header-form #photo,
-.header-form #photomulti,
+.header-form #photosmulti,
 .header-form #audio{
 	display:block;
 	border-bottom:1px solid #fefefe;

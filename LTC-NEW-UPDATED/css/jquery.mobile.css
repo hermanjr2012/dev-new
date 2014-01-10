@@ -17,7 +17,7 @@
 body.ui-mobile-viewport,
 div.ui-mobile-viewport { overflow-x: hidden; }
 .ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page { top: 0; left: 0; width: 100%; min-height: 100%; position: absolute; display: none; border: 0; }
-.ui-mobile .ui-page-active { display: block; overflow: visible; }
+.ui-mobile .ui-page-active { display: block; overflow: hidden; }
 .ui-page { outline: none; }
 @media screen and (orientation: portrait){
 .ui-mobile, .ui-mobile .ui-page { min-height: 420px; }
@@ -854,7 +854,7 @@ div.ui-mobile-viewport { overflow-x: hidden; }
 	left: 0;
 	right: 0;
 	width: 100%;
-	position: fixed !important;
+	position: fixed;
 	z-index: 1000;
 }
 .ui-header-fixed {
