@@ -76,13 +76,14 @@ function addDeviceTypeToBody() {
     $('body').addClass('platform-' + dv);
     $('body').addClass(dv + '-model-' + dm);
     
-    if ( dm == 'iphone5-1' ) {
-        $('#picture-add').addClass(dv + '-model-' + dm);
-        $('#video-add').addClass(dv + '-model-' + dm);
-        $('#audio-add').addClass(dv + '-model-' + dm);
-        $('#ndpTA').addClass(dv + '-model-' + dm);
+    if ( $(document).height() > 480 ) {
+        $('#picture-add').addClass('ios-model-iphone5-1');
+        $('#video-add').addClass('ios-model-iphone5-1');
+        $('#audio-add').addClass('ios-model-iphone5-1');
+        $('#ndpTA').addClass('ios-model-iphone5-1');
     }
     
+    $('body').addClass( "height-" + $(document).height() );
     
 }
 

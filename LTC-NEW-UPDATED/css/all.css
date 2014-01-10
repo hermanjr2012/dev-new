@@ -564,13 +564,21 @@ input[type=submit]:hover{cursor:pointer;}
     background-size:100% auto;
     position: relative;     
 }
-#picture-add.ios-model-iphone5-1{ background: url(../images/iOS/7/Add-Photo-640x517.jpg) no-repeat 0 144px #efefef; background-size:100% auto; }
+
 #video-add {
     background: url(../images/bg/Add-Video-640x617.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
     position: relative;
 }
-#video-add.ios-model-iphone5-1{ background: url(../images/iOS/7/Add-Video-640x517.jpg) no-repeat 0 144px #efefef; background-size:100% auto; }
+
+#picture-add.ios-model-iphone5-1{
+    background: url(../images/iOS/7/Add-Photo-640x617.jpg) no-repeat 0 144px #efefef;
+    background-size:100% auto;
+}
+#video-add.ios-model-iphone5-1{
+    background: url(../images/iOS/7/Add-Video-640x617.jpg) no-repeat 0 144px #efefef;
+    background-size:100% auto;
+}
 .content-holder {
 	padding:0 0 0 21px;
 	overflow:hidden;
@@ -610,7 +618,6 @@ input[type=submit]:hover{cursor:pointer;}
 .footer ul li a span.ui-btn-inner {
 	display:block;
 	width:100%;
-	height:100%;
 	min-height:54px;
 	padding:13px 0 0 !important;
 	background: url(../images/separator.png) no-repeat 0 50%;
