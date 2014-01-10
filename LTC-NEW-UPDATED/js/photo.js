@@ -135,7 +135,7 @@ photoApp.prototype={
     },
     
     _onLibraryFail: function(message) {
-        alert('No Photos Selected!','Photo Upload Error');
+        toastr.error('No Photos Selected!','Photo Upload Error');
     },
     
 }

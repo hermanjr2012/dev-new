@@ -66,7 +66,7 @@ videoApp.prototype={
 	},    
     
     _onFail: function(error) {
-        toastr.error('Failed! Error: ' + error.code);
+        toastr.error('No Video was taken!');
     },
     
     
@@ -76,7 +76,7 @@ videoApp.prototype={
 
         if (videoURL.indexOf('.mov') > -1 ) {
             var code = '<video id="show-video-js" width="' + $(document).width() + '" height="' + ($(document).height()-340) + '"><source src="' + that._captureArray[0].fullPath + '"></video>';
-            //$('#videoContent').css('background','#000').html(code);            
+            $('#videoContent').html(code);      
         } else {
             $('#videoContent').html('').addClass('noPreview');
         }
@@ -160,6 +160,6 @@ videoApp.prototype={
     },
     
     _onLibraryFail: function(message) {
-        toastr.error('Error: ' + message);
-    },    
+        toastr.error('No Video was Taken!');
+    }
 }

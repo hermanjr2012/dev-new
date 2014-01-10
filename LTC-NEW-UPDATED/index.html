@@ -12,6 +12,9 @@
 		<link href="css/all.css" rel="stylesheet" />
         <link href="css/toastr.css" rel="stylesheet" />
         <link href="css/ndp.css" rel="stylesheet" />
+        <!--j-->
+        <link href="css/gallery.css" rel="stylesheet" />
+        <!--end of jun-->
 
         <script src="cordova.js" type="text/javascript"></script>
 		<script src="js/jquery-1.8.2.min.js"></script>
@@ -27,6 +30,11 @@
         <script src="js/audio.js"></script>
         <script src="js/facebook.js"></script>
         <script src="js/ltc.js"></script>
+        
+        <!--j-->
+        <script src="js/custom-gallery.js"></script>
+        <!--end of jun-->
+        
     </head> 
     <body> 
         <div id="wrap"> 
@@ -99,6 +107,7 @@
     					</div>
     					<div class="hold-text">
     						<input type="text" name="name" id="photo" placeholder="Enter Photo Title Here" />
+                           
     					</div>
     				</div>
     			</header>
@@ -121,13 +130,15 @@
     						</div>
     						<div id="getPhotoFromLibraryButton" class="holder">
     							<div class="submit">
-    								<input type="submit" />
-    							</div>
-    							<a href="#">+ from device</a>
-    						</div>
+                                    
+    								<input onclick="document.location+='#photogallery';return false;" type="submit" />
+                                </div>
+    							<a href="#photogallery">+ from device</a>
+    						</div> 
     					</fieldset>
     				</div>
     			</div>
+                
     			<!-- footer -->
     			<footer class="footer" data-role="footer" data-position="fixed" data-id="theFooter">
     				<!-- nav -->
@@ -143,6 +154,44 @@
     				</nav>
     			</footer>
     		</div>
+            
+<!-- device photo library -->
+<div data-role="page" id="photogallery">
+    
+		<div class="gallery-wrapper">
+				<div data-role="header"><h1>Gallery</h1></div>
+				<div data-role="content" style="padding: 0 !important;">
+					<div id="controls">
+                    <div id="gallery-wrapper-header">
+                        <a class="backtohome" href="#picture-add" data-role="button" data-inline="true">Back</a>
+                        <a id="uploadselected" href="#" data-role="button" data-inline="true">Upload</a>
+                        
+                    </div>
+                        
+                    <div style="background: #403865; position: fixed; top: 55px; width: 100%; z-index: 3;">
+                        <div class="header-form">
+        					<div class="hold-text">
+        						<input type="text" name="name" id="photosmulti" placeholder="Please Provide Title for this Collection" />
+                               
+        					</div>
+        				</div>
+                        
+                    </div><!-- styled header-->
+                    <h3 style="text-align:center; position: fixed; width: 100%; top: 120px; z-index: 4;">Please Select Photos</h3>
+                        
+                      <div id="gallery-wrapper">
+						<div id="gallery">
+                            
+                            <ul id="gallery-list"></ul>
+                            
+                        </div>
+                      </div>    
+					</div>
+				</div>
+		</div>
+	
+ </div>
+<!-- end device photo library -->   
             
             
             

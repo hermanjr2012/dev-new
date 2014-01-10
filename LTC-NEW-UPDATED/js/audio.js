@@ -73,6 +73,6 @@ audioApp.prototype={
 	},    
     
     _onFail: function(error) {
-        toastr.error('Failed! Error: ' + error.code);
+        toastr.error('Audio Recording Cancelled!');
     }    
 }

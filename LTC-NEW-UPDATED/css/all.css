@@ -135,6 +135,7 @@ input[type=submit]:hover{cursor:pointer;}
 .header-form #journal,
 .header-form #video,
 .header-form #photo,
+.header-form #photomulti,
 .header-form #audio{
 	display:block;
 	border-bottom:1px solid #fefefe;
@@ -538,18 +539,16 @@ input[type=submit]:hover{cursor:pointer;}
     background: url(../images/bg/Add-Voice-640x517.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
 }
-
-#audio-add.ios-model-iphone5-1{ background: url(../images/iOS/7/Add-Voice-640x617.jpg) no-repeat 0 144px #efefef; background-size:100% auto; }
 /* #jornal-add */
 #jornal-add {
     background: url(../images/bg-jornal-add.png) repeat-y;
 }
 #picture-add {
-    background: url(../images/bg/Add-Photo-640x617.jpg) no-repeat 0 144px #efefef;
+    background: url(../images/bg/Add-Photo-640x517.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
 }
 #video-add {
-    background: url(../images/bg/Add-Video-640x617.jpg) no-repeat 0 144px #efefef;
+    background: url(../images/bg/Add-Video-640x517.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
 }
 #picture-add.ios-model-iphone5-1{
@@ -558,6 +557,10 @@ input[type=submit]:hover{cursor:pointer;}
 }
 #video-add.ios-model-iphone5-1{
     background: url(../images/iOS/7/Add-Video-640x617.jpg) no-repeat 0 144px #efefef;
+    background-size:100% auto;
+}
+#audio-add.ios-model-iphone5-1{
+    background: url(../images/iOS/7/Add-Voice-640x617.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
 }
 .content-holder {
@@ -640,7 +643,7 @@ input[type=submit]:hover{cursor:pointer;}
 .footer ul li.video a.ui-btn-active span.ui-btn-text {background: url(../images/sprite.png) no-repeat -74px -48px;}
 /* jornal */
 .footer ul li.jornal a span.ui-btn-text {
-    background: url(../images/sprite.png) no-repeat -234px 0;
+    background: url(../images/sprite.png) no-repeat -157px 0;
 	width:42px;
 	height:44px;
 }
@@ -648,7 +651,7 @@ input[type=submit]:hover{cursor:pointer;}
 .footer ul li.jornal a.ui-btn-active span.ui-btn-text{ background: url(../images/sprite.png) no-repeat -157px -48px; }
 /* audio */
 .footer ul li.audio a span.ui-btn-text {
-	background: url(../images/sprite.png) no-repeat -157px 0;
+	background: url(../images/sprite.png) no-repeat -234px 0;
 	width:42px;
 	height:44px;
 }
