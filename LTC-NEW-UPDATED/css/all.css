@@ -535,11 +535,7 @@ input[type=submit]:hover{cursor:pointer;}
 }
 /* .audio-block */
 #audio-add {
-/*	
-    background:#1e1e20 url(../images/bg-block.jpg) no-repeat 0 179px;
-    background-size:100% auto;
-*/
-	background: url(../images/bg/Add-Voice-640x517.jpg) no-repeat 0 144px #efefef;
+    background: url(../images/bg/Add-Voice-640x517.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
 }
 
@@ -548,26 +544,14 @@ input[type=submit]:hover{cursor:pointer;}
 #jornal-add {
     background: url(../images/bg-jornal-add.png) repeat-y;
 }
-/*
-#picture-add {
-    background: url(../images/bg/Add-Photo-640x517.jpg) no-repeat 0 144px #efefef;
-    background-size:100% auto;
-}
-#video-add {
-    background: url(../images/bg/Add-Video-640x517-.jpg) no-repeat 0 144px #efefef;
-    background-size:100% auto;
-}
-*/
 #picture-add {
     background: url(../images/bg/Add-Photo-640x617.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
 }
-
 #video-add {
     background: url(../images/bg/Add-Video-640x617.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
 }
-
 #picture-add.ios-model-iphone5-1{
     background: url(../images/iOS/7/Add-Photo-640x617.jpg) no-repeat 0 144px #efefef;
     background-size:100% auto;
@@ -661,7 +645,7 @@ input[type=submit]:hover{cursor:pointer;}
 	height:44px;
 }
 .footer ul li.jornal a:hover span.ui-btn-text,
-.footer ul li.jornal a.ui-btn-active span.ui-btn-text{ background: url(../images/sprite.png) no-repeat -234px -48px; }
+.footer ul li.jornal a.ui-btn-active span.ui-btn-text{ background: url(../images/sprite.png) no-repeat -157px -48px; }
 /* audio */
 .footer ul li.audio a span.ui-btn-text {
 	background: url(../images/sprite.png) no-repeat -157px 0;
@@ -669,7 +653,7 @@ input[type=submit]:hover{cursor:pointer;}
 	height:44px;
 }
 .footer ul li.audio a:hover span.ui-btn-text,
-.footer ul li.audio a.ui-btn-active span.ui-btn-text {background: url(../images/sprite.png) no-repeat -157px -48px;}
+.footer ul li.audio a.ui-btn-active span.ui-btn-text {background: url(../images/sprite.png) no-repeat -234px -48px;}
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
 only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
